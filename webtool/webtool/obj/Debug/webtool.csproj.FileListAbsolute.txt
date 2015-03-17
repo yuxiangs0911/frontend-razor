@@ -1,0 +1,9 @@
+D:\project\webtool\webtool\bin\Debug\webtool.exe.config
+D:\project\webtool\webtool\obj\Debug\webtool.Properties.Resources.resources
+D:\project\webtool\webtool\obj\Debug\webtool.csproj.GenerateResource.Cache
+D:\project\webtool\webtool\bin\Debug\webtool.exe
+D:\project\webtool\webtool\bin\Debug\webtool.pdb
+D:\project\webtool\webtool\obj\Debug\webtool.CompressorForm.resources
+D:\project\webtool\webtool\obj\Debug\webtool.exe
+D:\project\webtool\webtool\obj\Debug\webtool.pdb
+D:\project\webtool\webtool\obj\Debug\webtool.RootForm.resources
