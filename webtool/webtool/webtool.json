@@ -1,0 +1,49 @@
+﻿{
+    "name": "webtool",
+    "version": "1.0.0",
+    "projects": [
+        {
+            "name": "pareto",
+            "projectDirectory": "D:\project\pareto\pareto-demo\pareto\source\pareto\pareto",
+            "url": "http://localhost:8001",
+            "output": "D:\project\pareto\pareto-demo\pareto\publish",
+            "isCompress": true,
+            "isCommitSvn": true,
+            "structure": {
+                "view": "/", // "/","views"
+                "script": "scripts", // optimization
+                "css": "css", // optimization
+                "image": "images"
+            },
+            "ignoreDirectory": "Views,widget"
+        },
+        {
+            "name": "bpforum",
+            "projectDirectory": "D:\project\bpforum\bpforum-web\src\main\webapp\demo\bpforum\bpforum",
+            "url": "http://localhost:8002",
+            "output": "D:\project\bpforum\bpforum-web\src\main\webapp\demo\publish",
+            "isCompress": false,
+            "isCommitSvn": true
+        }
+    ]
+}
+
+
+/*  
+"projects": [
+        {
+            "name": "pareto",
+            "projectDirectory": "D:\project\pareto\pareto-demo\pareto\source\pareto\pareto",
+            "url": "http://localhost:8001",
+            "output": "D:\project\pareto\pareto-demo\pareto\publish",
+            "isCompress": true,
+            "isCommitSvn": true,
+            "structure": {
+                "view": "/", // "/","views"
+                "script": "scripts", // optimization
+                "css": "css", // optimization
+                "image": "images"
+            }
+        }
+    ]
+*/

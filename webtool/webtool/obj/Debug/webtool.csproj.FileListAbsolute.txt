@@ -7,3 +7,15 @@ D:\project\webtool\webtool\obj\Debug\webtool.CompressorForm.resources
 D:\project\webtool\webtool\obj\Debug\webtool.exe
 D:\project\webtool\webtool\obj\Debug\webtool.pdb
 D:\project\webtool\webtool\obj\Debug\webtool.RootForm.resources
+D:\github\fontend-razor\frontend-razor\webtool\webtool\bin\Debug\webtool.exe.config
+D:\github\fontend-razor\frontend-razor\webtool\webtool\obj\Debug\webtool.exe
+D:\github\fontend-razor\frontend-razor\webtool\webtool\obj\Debug\webtool.pdb
+D:\github\fontend-razor\frontend-razor\webtool\webtool\bin\Debug\webtool.exe
+D:\github\fontend-razor\frontend-razor\webtool\webtool\bin\Debug\webtool.pdb
+D:\github\fontend-razor\frontend-razor\webtool\webtool\obj\Debug\webtool.csprojResolveAssemblyReference.cache
+D:\github\fontend-razor\frontend-razor\webtool\webtool\obj\Debug\webtool.RootForm.resources
+D:\github\fontend-razor\frontend-razor\webtool\webtool\obj\Debug\webtool.Properties.Resources.resources
+D:\github\fontend-razor\frontend-razor\webtool\webtool\obj\Debug\webtool.csproj.GenerateResource.Cache
+D:\github\fontend-razor\frontend-razor\webtool\webtool\bin\Debug\Newtonsoft.Json.dll
+D:\github\fontend-razor\frontend-razor\webtool\webtool\bin\Debug\Newtonsoft.Json.xml
+D:\github\fontend-razor\frontend-razor\webtool\webtool\bin\Debug\webtool.json
