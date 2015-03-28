@@ -38,7 +38,7 @@ namespace webtool
                 DirectoryTool.ClearDirectory(outputDirectoryInfo);
 
                 tip.Text = "build razor...";
-                RazorTool.Build(projectDirectoryInfo, outputDirectoryInfo, project.ignoreDirectory);
+                RazorTool.Build(projectDirectoryInfo, outputDirectoryInfo, project.ignoreDirectory, project.url);
 
                 // step2
                 if (project.isCompress)
@@ -55,9 +55,12 @@ namespace webtool
                 }
 
                 tip.Text = "build success";
+                MessageBox.Show("build success");
             }
-            catch
+            catch (Exception ex)
             {
+                MessageBox.Show("Exception:" + ex.Message);
+                tip.Text = "build exception";
             }
         }
 
