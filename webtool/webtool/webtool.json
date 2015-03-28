@@ -15,7 +15,7 @@
                 "css": "css", // optimization
                 "image": "images"
             },
-            "ignoreDirectory": "Views,widget"
+            "ignoreDirectory": "\Views,\widget"
         },
         {
             "name": "bpforum",
@@ -43,7 +43,8 @@
                 "script": "scripts", // optimization
                 "css": "css", // optimization
                 "image": "images"
-            }
+            },
+            "ignoreDirectory": "\Views,\widget"
         }
     ]
 */
