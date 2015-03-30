@@ -20,10 +20,16 @@
         {
             "name": "bpforum",
             "projectDirectory": "D:\project\bpforum\bpforum-web\src\main\webapp\demo\bpforum\bpforum",
-            "url": "http://localhost:8002",
+            "url": "http://localhost:8005",
             "output": "D:\project\bpforum\bpforum-web\src\main\webapp\demo\publish",
-            "isCompress": false,
-            "isCommitSvn": true
+            "isCompress": true,
+            "isCommitSvn": true,
+            "structure": {
+                "view": "/", // "/","views"
+                "script": "js", // optimization
+                "css": "css", // optimization
+                "image": "images"
+            }
         }
     ]
 }

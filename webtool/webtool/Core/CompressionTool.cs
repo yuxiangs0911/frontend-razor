@@ -13,6 +13,8 @@ namespace webtool
         {
             DirectoryInfo cssDirInfo = DirectoryTool.CreateDirectory(Path.Combine(projectDirectoryInfo.FullName, structure.css));
             DirectoryInfo scriptDirInfo = DirectoryTool.CreateDirectory(Path.Combine(projectDirectoryInfo.FullName, structure.script));
+
+            MergeCss(cssDirInfo);
         }
 
         private static void MergeCss(DirectoryInfo cssDirInfo)
@@ -26,7 +28,13 @@ namespace webtool
             for (int i = 1; i < cssFiles.Length; i++)
             {
                 var cssFile = cssFiles[i];
+                string text = File.ReadAllText(cssFile.FullName);
+                using (var sw = firstCssFile.AppendText())
+                {
+                    sw.Write(text);
+                }
 
+                cssFile.Delete();
             }
         }
     }
