@@ -27,9 +27,16 @@ namespace webtool
             }
         }
 
-        public static void CopyResFile(DirectoryInfo projectDirectoryInfo, DirectoryInfo outputDirectoryInfo, Structure structure)
+        public static string GetDirectory(string projectDirectory, string releativePath)
         {
-
+            if (releativePath == "\\" || releativePath == "/" || releativePath == "//")
+            {
+                return projectDirectory;
+            }
+            else
+            {
+                return Path.Combine(projectDirectory, releativePath);
+            }
         }
     }
 }

@@ -41,6 +41,7 @@
             this.CheckboxCommitSvn = new System.Windows.Forms.CheckBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tip = new System.Windows.Forms.ToolStripStatusLabel();
+            this.CheckboxSyncSvn = new System.Windows.Forms.CheckBox();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,7 +134,7 @@
             // CheckboxCommitSvn
             // 
             this.CheckboxCommitSvn.AutoSize = true;
-            this.CheckboxCommitSvn.Location = new System.Drawing.Point(257, 230);
+            this.CheckboxCommitSvn.Location = new System.Drawing.Point(361, 230);
             this.CheckboxCommitSvn.Name = "CheckboxCommitSvn";
             this.CheckboxCommitSvn.Size = new System.Drawing.Size(84, 16);
             this.CheckboxCommitSvn.TabIndex = 6;
@@ -156,11 +157,22 @@
             this.tip.Size = new System.Drawing.Size(36, 17);
             this.tip.Text = "ready";
             // 
+            // CheckboxSyncSvn
+            // 
+            this.CheckboxSyncSvn.AutoSize = true;
+            this.CheckboxSyncSvn.Location = new System.Drawing.Point(260, 230);
+            this.CheckboxSyncSvn.Name = "CheckboxSyncSvn";
+            this.CheckboxSyncSvn.Size = new System.Drawing.Size(72, 16);
+            this.CheckboxSyncSvn.TabIndex = 9;
+            this.CheckboxSyncSvn.Text = "sync svn";
+            this.CheckboxSyncSvn.UseVisualStyleBackColor = true;
+            // 
             // RootForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 356);
+            this.Controls.Add(this.CheckboxSyncSvn);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.BtnBuild);
             this.Controls.Add(this.CheckboxCommitSvn);
@@ -199,5 +211,6 @@
         private System.Windows.Forms.CheckBox CheckboxCommitSvn;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tip;
+        private System.Windows.Forms.CheckBox CheckboxSyncSvn;
     }
 }

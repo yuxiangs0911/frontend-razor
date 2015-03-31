@@ -5,27 +5,29 @@
         {
             "name": "pareto",
             "projectDirectory": "D:\project\pareto\pareto-demo\pareto\source\pareto\pareto",
-            "url": "http://localhost:8001",
+            "url": "http://localhost:9123",
             "output": "D:\project\pareto\pareto-demo\pareto\publish",
-            "isCompress": true,
-            "isCommitSvn": true,
+            "compress": false,
+            "syncSvn": true,
+            "commitSvn": true,
             "structure": {
-                "view": "/", // "/","views"
+                "view": "/", // "\","views"
                 "script": "scripts", // optimization
-                "css": "css", // optimization
+                "css": "css,libs/magnific,libs/uploadify", // optimization
                 "image": "images"
             },
-            "ignoreDirectory": "\Views,\widget"
+            "ignoreDirectory": "/Views,/widget"
         },
         {
             "name": "bpforum",
             "projectDirectory": "D:\project\bpforum\bpforum-web\src\main\webapp\demo\bpforum\bpforum",
             "url": "http://localhost:8005",
             "output": "D:\project\bpforum\bpforum-web\src\main\webapp\demo\publish",
-            "isCompress": true,
-            "isCommitSvn": true,
+            "compress": true,
+            "syncSvn": true,
+            "commitSvn": true,
             "structure": {
-                "view": "/", // "/","views"
+                "view": "/", // ""\","views"
                 "script": "js", // optimization
                 "css": "css", // optimization
                 "image": "images"
@@ -37,17 +39,18 @@
 
 /*  
 "projects": [
-        {
+{
             "name": "pareto",
             "projectDirectory": "D:\project\pareto\pareto-demo\pareto\source\pareto\pareto",
-            "url": "http://localhost:8001",
+            "url": "http://localhost:9123",
             "output": "D:\project\pareto\pareto-demo\pareto\publish",
-            "isCompress": true,
-            "isCommitSvn": true,
+            "compress": false,
+            "syncSvn": true,
+            "commitSvn": true,
             "structure": {
-                "view": "/", // "/","views"
+                "view": "\\", // "\","views"
                 "script": "scripts", // optimization
-                "css": "css", // optimization
+                "css": "css,libs/magnific,libs/uploadify", // optimization
                 "image": "images"
             },
             "ignoreDirectory": "\Views,\widget"

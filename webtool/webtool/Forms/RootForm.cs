@@ -30,28 +30,36 @@ namespace webtool
         {
             try
             {
-                Project project = model.projects[this.ComboxProject.SelectedIndex];
+                Project project = GetProject();
 
-                // step1
+                // step1 create directory
                 DirectoryInfo projectDirectoryInfo = new DirectoryInfo(project.projectDirectory);
                 DirectoryInfo outputDirectoryInfo = DirectoryTool.CreateDirectory(project.output);
                 DirectoryTool.ClearDirectory(outputDirectoryInfo);
 
+                // step2 sync svn  
+                if (project.syncSvn)
+                {
+                    tip.Text = "sync svn...";
+                    VersionControlSystemTool.UpdateSvn(projectDirectoryInfo.FullName);
+                }
+
+                // step2 build razor
                 tip.Text = "build razor...";
                 RazorTool.Build(projectDirectoryInfo, outputDirectoryInfo, project.ignoreDirectory, project.url);
 
-                // step2
-                if (project.isCompress)
+                // step3 compress 
+                if (project.compress)
                 {
                     tip.Text = "compress...";
                     CompressionTool.Compress(outputDirectoryInfo, project.structure);
                 }
 
-                // step3
-                if (project.isCommitSvn)
+                // step4 commit
+                if (project.commitSvn)
                 {
                     tip.Text = "commit to svn...";
-                    VersionControlSystemTool.CommitSvn();
+                    VersionControlSystemTool.CommitSvn(outputDirectoryInfo.FullName, "razor-build");
                 }
 
                 tip.Text = "build success";
@@ -75,8 +83,21 @@ namespace webtool
             this.TxtProjectDirectory.Text = project.projectDirectory;
             this.TxtUrl.Text = project.url;
             this.TxtOutput.Text = project.output;
-            this.CheckboxCompress.Checked = project.isCompress;
-            this.CheckboxCommitSvn.Checked = project.isCommitSvn;
+            this.CheckboxCompress.Checked = project.compress;
+            this.CheckboxCommitSvn.Checked = project.commitSvn;
+            this.CheckboxSyncSvn.Checked = project.syncSvn;
+        }
+
+        private Project GetProject()
+        {
+            Project p = model.projects[this.ComboxProject.SelectedIndex];
+            p.projectDirectory = TxtProjectDirectory.Text;
+            p.url = TxtUrl.Text;
+            p.output = TxtOutput.Text;
+            p.compress = CheckboxCompress.Checked;
+            p.commitSvn = CheckboxCommitSvn.Checked;
+            p.syncSvn = CheckboxSyncSvn.Checked;
+            return p;
         }
     }
 }

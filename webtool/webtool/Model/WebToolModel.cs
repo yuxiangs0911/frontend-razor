@@ -19,8 +19,9 @@ namespace webtool
         public string projectDirectory { get; set; }
         public string url { get; set; }
         public string output { get; set; }
-        public bool isCompress { get; set; }
-        public bool isCommitSvn { get; set; }
+        public bool compress { get; set; }
+        public bool commitSvn { get; set; }
+        public bool syncSvn { get; set; }
         public Structure structure { get; set; }
         public string ignoreDirectory { get; set; }
     }
