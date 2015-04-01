@@ -12,18 +12,19 @@ namespace webtool
     {
         private static string cssMergedName = "site.min.css";
         private static string cssMergedFullName;
+        private static string rjsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Libs\\r.js");
 
         public static void Compress(DirectoryInfo projectDirectoryInfo, Structure structure)
         {
             DirectoryInfo scriptDirInfo = DirectoryTool.CreateDirectory(Path.Combine(projectDirectoryInfo.FullName, structure.script));
             MergeCss(projectDirectoryInfo.FullName, structure.css, structure.view);
-            CompressCss();
+            CompressScript(Path.Combine(projectDirectoryInfo.FullName, structure.script));
         }
 
-        private static void CompressCss()
+        private static void CompressScript(string scriptPath)
         {
-            string cmd = "node {0} -o cssIn={1} out={1} optimizeCss=standard";
-            cmd = string.Format(cmd, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Libs\\r.js"), cssMergedFullName);
+            string cmd = "node {0} -o {1}";
+            cmd = string.Format(cmd, rjsPath, Path.Combine(scriptPath, "build.js"));
             ProcessTool.ExecuteCommand(cmd);
         }
 
