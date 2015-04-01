@@ -18,11 +18,7 @@ namespace webtool
         {
             DirectoryInfo scriptDirInfo = DirectoryTool.CreateDirectory(Path.Combine(projectDirectoryInfo.FullName, structure.script));
             MergeCss(projectDirectoryInfo.FullName, structure.css, structure.view);
-            CompressScript(Path.Combine(projectDirectoryInfo.FullName, structure.script));
-        }
 
-        private static void CompressScript(string scriptPath)
-        {
             string cmd = "node {0} -o {1}";
             cmd = string.Format(cmd, rjsPath, Path.Combine(scriptPath, "build.js"));
             ProcessTool.ExecuteCommand(cmd);
