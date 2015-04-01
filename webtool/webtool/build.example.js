@@ -1,20 +1,15 @@
 ﻿({
-    appDir: '../../publish',
+    appDir: '../../html',
     baseUrl: "scripts",
-    dir: '../../publish-built',
+    dir: '../../built',
     mainConfigFile: 'common.js',
     optimizeCss: "standard",
     fileExclusionRegExp: /^(r|build)\.js$/,
     removeCombined: true,
-    keepBuildDir: true,
     modules: [
 		{
 		    name: "common",
 		    include: ["base", "api"]
-		},
-        {
-            name: "app/infocenter",
-            exclude: ["common"]
-        }
+		}
     ]
 })
