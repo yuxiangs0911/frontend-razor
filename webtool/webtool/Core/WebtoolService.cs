@@ -18,13 +18,5 @@ namespace webtool
             WebtoolModel model = JsonConvert.DeserializeObject<WebtoolModel>(json);
             return model;
         }
-
-        //public static BuildModel GetBuildModel()
-        //{
-        //    //string path = AppDomain.CurrentDomain.BaseDirectory + "\\webtool.json";
-        //    //string json = File.ReadAllText(path).Replace(@"\", @"\\");
-        //    //BuildModel model = JsonConvert.DeserializeObject<BuildModel>(json);
-        //    //return model;
-        //}
     }
 }
