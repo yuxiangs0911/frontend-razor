@@ -32,6 +32,9 @@ namespace webtool
             {
                 Project project = GetProject();
 
+                OptimizationModel optimizationModel = CompressionService.Get(project.projectDirectory, project.structure.script);
+
+
                 // step1 create directory
                 DirectoryInfo projectDirectoryInfo = new DirectoryInfo(project.projectDirectory);
                 DirectoryInfo outputDirectoryInfo = DirectoryTool.CreateDirectory(project.output);
@@ -52,7 +55,7 @@ namespace webtool
                 if (project.compress)
                 {
                     tip.Text = "compress...";
-                    CompressionTool.Compress(outputDirectoryInfo, project.structure);
+                    CompressionService.Compress(outputDirectoryInfo, project.structure);
                 }
 
                 // step4 commit

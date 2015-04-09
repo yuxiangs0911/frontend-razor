@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\CompressionTool.cs" />
+    <Compile Include="Core\CompressionService.cs" />
     <Compile Include="Core\DirectoryTool.cs" />
     <Compile Include="Core\HttpTool.cs" />
     <Compile Include="Core\ProcessTool.cs" />
@@ -61,7 +61,7 @@
     <Compile Include="Forms\RootForm.Designer.cs">
       <DependentUpon>RootForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\BuildModel.cs" />
+    <Compile Include="Model\OptimizationModel.cs" />
     <Compile Include="Model\WebToolModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

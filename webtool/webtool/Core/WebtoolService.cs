@@ -13,7 +13,7 @@ namespace webtool
     {
         public static WebtoolModel Get()
         {
-            string path = AppDomain.CurrentDomain.BaseDirectory + "\\webtool.json";
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "webtool.json");
             string json = File.ReadAllText(path).Replace(@"\", @"\\");
             WebtoolModel model = JsonConvert.DeserializeObject<WebtoolModel>(json);
             return model;

@@ -6,8 +6,8 @@
             "name": "pareto",
             "projectDirectory": "D:\project\pareto\pareto-demo\pareto\source\pareto\pareto",
             "url": "http://localhost:9123",
-            "output": "D:\project\pareto\pareto-demo\pareto\publish",
-            "compress": false,
+            "output": "D:\project\pareto\pareto-demo\pareto\publish\html",
+            "compress": true,
             "syncSvn": true,
             "commitSvn": true,
             "structure": {
@@ -23,7 +23,7 @@
             "projectDirectory": "D:\project\bpforum\bpforum-web\src\main\webapp\demo\bpforum\bpforum",
             "url": "http://localhost:8005",
             "output": "D:\project\bpforum\bpforum-web\src\main\webapp\demo\publish\html",
-            "compress": false,
+            "compress": true,
             "syncSvn": true,
             "commitSvn": true,
             "structure": {
@@ -37,8 +37,8 @@
             "name": "pareto.admin",
             "projectDirectory": "D:\project\pareto\pareto-demo\pareto\source\pareto\pareto.admin",
             "url": "http://localhost:8003",
-            "output": "D:\project\pareto\pareto-demo\pareto\publish.admin",
-            "compress": false,
+            "output": "D:\project\pareto\pareto-demo\pareto\publish.admin\html",
+            "compress": true,
             "syncSvn": true,
             "commitSvn": true,
             "structure": {

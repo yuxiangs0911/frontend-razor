@@ -6,19 +6,18 @@ using System.Threading.Tasks;
 
 namespace webtool
 {
-    public class BuildModel
+    public class OptimizationModel
     {
         public string appDir { get; set; }
         public string baseUrl { get; set; }
         public string dir { get; set; }
         public string mainConfigFile { get; set; }
         public string optimizeCss { get; set; }
-        public string fileExclusionRegExp { get; set; }
         public bool removeCombined { get; set; }
-        public List<BuildModuleModel> modules { get; set; }
+        public List<OptimizationModuleModel> modules { get; set; }
     }
 
-    public class BuildModuleModel
+    public class OptimizationModuleModel
     {
         public string Name { get; set; }
         public List<string> include { get; set; }
