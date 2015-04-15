@@ -16,6 +16,7 @@ namespace webtool
 
         public static void CommitSvn(string projectDirectory, string message)
         {
+            UpdateSvn(projectDirectory);
             string command = string.Format("svn add {0} --force&svn commit {0} -m '{1}'", projectDirectory, message);
             ProcessTool.ExecuteCommand(command);
         }
