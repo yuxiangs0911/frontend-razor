@@ -20,3 +20,17 @@ D:\github\fontend-razor\frontend-razor\webtool\webtool\bin\Debug\Newtonsoft.Json
 D:\github\fontend-razor\frontend-razor\webtool\webtool\bin\Debug\Newtonsoft.Json.xml
 D:\github\fontend-razor\frontend-razor\webtool\webtool\bin\Debug\webtool.json
 D:\github\fontend-razor\frontend-razor\webtool\webtool\bin\Debug\Libs\r.js
+F:\project\frontend-razor\webtool\webtool\bin\Debug\webtool.exe.config
+F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.exe
+F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.pdb
+F:\project\frontend-razor\webtool\webtool\bin\Debug\webtool.json
+F:\project\frontend-razor\webtool\webtool\bin\Debug\Libs\r.js
+F:\project\frontend-razor\webtool\webtool\bin\Debug\webtool.exe
+F:\project\frontend-razor\webtool\webtool\bin\Debug\webtool.pdb
+F:\project\frontend-razor\webtool\webtool\bin\Debug\Newtonsoft.Json.dll
+F:\project\frontend-razor\webtool\webtool\bin\Debug\Newtonsoft.Json.xml
+F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.csprojResolveAssemblyReference.cache
+F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.RootForm.resources
+F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.Properties.Resources.resources
+F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.csproj.GenerateResource.Cache
+F:\project\frontend-razor\webtool\webtool\bin\Debug\TidyManaged.xml

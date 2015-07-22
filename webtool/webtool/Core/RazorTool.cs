@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TidyManaged;
 
 namespace webtool
 {
@@ -11,13 +12,13 @@ namespace webtool
     {
         private static readonly List<string> ignoreFiles = new List<string> { ".csproj", ".user", ".Debug.config", ".Release.config", "webtool.json" };
 
-        public static void Build(DirectoryInfo projectDirectoryInfo, DirectoryInfo outputDirectoryInfo, string ignoreDirectory, string url)
+        public static void Build(DirectoryInfo projectDirectoryInfo, DirectoryInfo outputDirectoryInfo, string ignoreDirectory, string url, Project project)
         {
-            ignoreDirectory = "App_Data,bin,Shared,Properties,obj,aspnet_client," + ignoreDirectory;
-            BuildImpl(projectDirectoryInfo, projectDirectoryInfo, outputDirectoryInfo, ignoreDirectory.Split(',').ToList(), url);
+            ignoreDirectory = "App_Data,bin,Shared,shared,Properties,obj,aspnet_client," + ignoreDirectory;
+            BuildImpl(projectDirectoryInfo, projectDirectoryInfo, outputDirectoryInfo, ignoreDirectory.Split(',').ToList(), url, project);
         }
 
-        private static void BuildImpl(DirectoryInfo projectDirectoryInfo, DirectoryInfo currentDirectoryInfo, DirectoryInfo outputDirectoryInfo, List<string> ignoreDirectories, string url)
+        private static void BuildImpl(DirectoryInfo projectDirectoryInfo, DirectoryInfo currentDirectoryInfo, DirectoryInfo outputDirectoryInfo, List<string> ignoreDirectories, string url, Project project)
         {
             string targetPath = string.Empty;
             DirectoryInfo targetDirInfo = null;
@@ -44,6 +45,13 @@ namespace webtool
 
                 if (file.Extension == ".cshtml")
                 {
+                    if (project.structure.view != "\\")
+                    {
+                        if (!currentDirectoryInfo.FullName.Contains(project.structure.view))
+                        {
+                            continue;
+                        }
+                    }
                     BuildHtml(projectDirectoryInfo.FullName, file, targetPath, url);
                 }
                 else
@@ -71,7 +79,7 @@ namespace webtool
                 {
                     continue;
                 }
-                BuildImpl(projectDirectoryInfo, dir, outputDirectoryInfo, ignoreDirectories, url);
+                BuildImpl(projectDirectoryInfo, dir, outputDirectoryInfo, ignoreDirectories, url, project);
             }
         }
 

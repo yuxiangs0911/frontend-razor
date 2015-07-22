@@ -46,7 +46,7 @@ namespace webtool
 
                 // step2 build razor
                 tip.Text = "build razor...";
-                RazorTool.Build(projectDirectoryInfo, outputDirectoryInfo, project.ignoreDirectory, project.url);
+                RazorTool.Build(projectDirectoryInfo, outputDirectoryInfo, project.ignoreDirectory, project.url, project);
 
                 // step3 compress 
                 if (project.compress)

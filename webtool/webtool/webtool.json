@@ -3,51 +3,20 @@
     "version": "1.0.0",
     "projects": [
         {
-            "name": "pareto",
-            "projectDirectory": "D:\project\pareto\pareto-demo\pareto\source\pareto\pareto",
-            "url": "http://localhost:9123",
-            "output": "D:\project\pareto\pareto-demo\pareto\publish\html",
-            "compress": true,
-            "syncSvn": true,
-            "commitSvn": true,
+            "name": "erp",
+            "projectDirectory": "E:\project\ges2.0\h5\erp\erp",
+            "url": "http://localhost:8000",
+            "output": "E:\project\ges2.0\h5\publish\html",
+            "compress": false,
+            "syncSvn": false,
+            "commitSvn": false,
             "structure": {
-                "view": "/", // "\","views"
+                "view": "views", // "\","views"
                 "script": "scripts", // optimization
                 "css": "css,libs/magnific,libs/uploadify", // optimization
                 "image": "images"
             },
-            "ignoreDirectory": "/Views,/widget"
-        },
-        {
-            "name": "bpforum",
-            "projectDirectory": "D:\project\bpforum\bpforum-web\src\main\webapp\demo\bpforum\bpforum",
-            "url": "http://localhost:8005",
-            "output": "D:\project\bpforum\bpforum-web\src\main\webapp\demo\publish\html",
-            "compress": true,
-            "syncSvn": true,
-            "commitSvn": true,
-            "structure": {
-                "view": "/", // ""\","views"
-                "script": "js", // optimization
-                "css": "css", // optimization
-                "image": "images"
-            }
-        },
-        {
-            "name": "pareto.admin",
-            "projectDirectory": "D:\project\pareto\pareto-demo\pareto\source\pareto\pareto.admin",
-            "url": "http://localhost:8003",
-            "output": "D:\project\pareto\pareto-demo\pareto\publish.admin\html",
-            "compress": true,
-            "syncSvn": true,
-            "commitSvn": true,
-            "structure": {
-                "view": "/", // "\","views"
-                "script": "scripts", // optimization
-                "css": "css,libs/magnific,libs/uploadify", // optimization
-                "image": "images"
-            },
-            "ignoreDirectory": "/Views,/widget"
+            "ignoreDirectory": "/views"
         }
     ]
 }
