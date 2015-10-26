@@ -5,16 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TidyManaged;
+using TidyNet;
 
 namespace webtool
 {
     public class RazorTool
     {
-        private static readonly List<string> ignoreFiles = new List<string> { ".csproj", ".user", ".Debug.config", ".Release.config", "webtool.json" };
+        private static readonly List<string> ignoreFiles = new List<string> { "compilerconfig.json", "compilerconfig.json.defaults", "packages.config", "project.lock.json", "webtool.json" };
+        private static readonly List<string> ignoreFileExtensions = new List<string> { ".csproj", ".user", ".Debug.config", ".Release.config" };
 
         public static void Build(DirectoryInfo projectDirectoryInfo, DirectoryInfo outputDirectoryInfo, string ignoreDirectory, string url, Project project)
         {
-            ignoreDirectory = "App_Data,bin,Shared,shared,Properties,obj,aspnet_client," + ignoreDirectory;
+            ignoreDirectory = ".sass-cache,App_Code,bower_components,node_modules,App_Data,bin,Shared,shared,Properties,obj,aspnet_client," + ignoreDirectory;
             BuildImpl(projectDirectoryInfo, projectDirectoryInfo, outputDirectoryInfo, ignoreDirectory.Split(',').ToList(), url, project);
         }
 
@@ -38,12 +40,12 @@ namespace webtool
             foreach (var file in currentDirectoryInfo.GetFiles())
             {
 
-                if (ignoreFiles.Any(m => m.EndsWith(file.Extension)))
+                if (ignoreFiles.Any(m => m == file.Name) || ignoreFileExtensions.Any(m => m.EndsWith(file.Extension)))
                 {
                     continue;
                 }
 
-                if (file.Extension == ".cshtml")
+                if (file.Extension == ".cshtml" && !file.Name.StartsWith("_"))
                 {
                     if (project.structure.view != "\\")
                     {
@@ -88,8 +90,19 @@ namespace webtool
             string fileUrl = string.Concat(url, "/", sourceFile.FullName.Substring(projectPath.Length + 1));
             string html = HttpTool.GetHtml(fileUrl);
             html = html.Replace(".cshtml", ".html");
+
+            //Tidy tidy = new Tidy();
+            //MemoryStream input = new MemoryStream(Encoding.UTF8.GetBytes(html));
+            //MemoryStream output = new MemoryStream();
+            //var messages = new TidyMessageCollection();
+            //tidy.Parse(input, output, messages);
+            //html = Encoding.UTF8.GetString(output.ToArray());
+
             string htmlFilePath = Path.Combine(targetPath, sourceFile.Name.Replace(".cshtml", ".html"));
             File.WriteAllText(htmlFilePath, html, UTF8Encoding.UTF8);
+
+            //input.Dispose();
+            //output.Dispose();
         }
     }
 }

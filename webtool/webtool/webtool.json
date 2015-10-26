@@ -1,7 +1,39 @@
-﻿{
+{
     "name": "webtool",
     "version": "1.0.0",
     "projects": [
+        {
+            "name": "myhome",
+            "projectDirectory": "E:\project\我的家\h5\myhome\myhome",
+            "url": "http://localhost:9000",
+            "output": "E:\project\我的家\h5\publish",
+            "compress": false,
+            "syncSvn": false,
+            "commitSvn": false,
+            "structure": {
+                "view": "views", // "\","views"
+                "script": "res/js", // optimization
+                "css": "res/css", // optimization
+                "image": "res/img"
+            },
+            "ignoreDirectory": "/views"
+        },
+        {
+            "name": "myhome.h5",
+            "projectDirectory": "E:\project\我的家\h5\myhome.h5\myhome.h5",
+            "url": "http://localhost:9003",
+            "output": "E:\project\我的家\h5\publish.h5",
+            "compress": false,
+            "syncSvn": false,
+            "commitSvn": false,
+            "structure": {
+                "view": "views", // "\","views"
+                "script": "res/js", // optimization
+                "css": "res/css", // optimization
+                "image": "res/img"
+            },
+            "ignoreDirectory": "/views"
+        },
         {
             "name": "erp",
             "projectDirectory": "E:\project\ges2.0\h5\erp\erp",

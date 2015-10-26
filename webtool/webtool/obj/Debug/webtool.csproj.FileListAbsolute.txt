@@ -34,3 +34,4 @@ F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.RootForm.resources
 F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.Properties.Resources.resources
 F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.csproj.GenerateResource.Cache
 F:\project\frontend-razor\webtool\webtool\bin\Debug\TidyManaged.xml
+F:\project\frontend-razor\webtool\webtool\bin\Debug\TidyNet.dll

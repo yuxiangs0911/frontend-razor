@@ -17,7 +17,7 @@ namespace webtool
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             if (response.StatusCode == HttpStatusCode.OK)
             {
-                using (StreamReader reader = new StreamReader(response.GetResponseStream()))
+                using (StreamReader reader = new StreamReader(response.GetResponseStream(), Encoding.UTF8))
                 {
                     html = reader.ReadToEnd();
                     response.Close();

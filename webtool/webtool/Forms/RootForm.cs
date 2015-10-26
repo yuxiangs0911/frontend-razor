@@ -28,8 +28,8 @@ namespace webtool
 
         private void BtnBuild_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
                 Project project = GetProject();
 
                 // step1 create directory
@@ -64,12 +64,13 @@ namespace webtool
 
                 tip.Text = "build success";
                 MessageBox.Show("build success");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Exception:" + ex.Message);
-                tip.Text = "build exception";
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Exception:" + ex.Message);
+            //    tip.Text = "build exception";
+            //    throw;
+            //}
         }
 
         private void ComboxProject_SelectedIndexChanged(object sender, EventArgs e)

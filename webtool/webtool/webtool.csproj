@@ -50,6 +50,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Libs\TidyManaged.dll</HintPath>
     </Reference>
+    <Reference Include="TidyNet, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\TidyNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\CompressionService.cs" />
@@ -102,6 +106,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <Content Include="build.example.js" />
+    <Content Include="Libs\TidyNet.dll" />
     <Content Include="Libs\yuicompressor.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
