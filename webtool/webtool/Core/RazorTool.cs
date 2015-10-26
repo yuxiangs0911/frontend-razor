@@ -45,8 +45,12 @@ namespace webtool
                     continue;
                 }
 
-                if (file.Extension == ".cshtml" && !file.Name.StartsWith("_"))
+                if (file.Extension == ".cshtml")
                 {
+                    if (file.Name.StartsWith("_"))
+                    {
+                        continue;
+                    }
                     if (project.structure.view != "\\")
                     {
                         if (!currentDirectoryInfo.FullName.Contains(project.structure.view))
