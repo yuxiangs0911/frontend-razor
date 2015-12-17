@@ -64,6 +64,8 @@ namespace webtool
                 {
                     string targetFilePath = Path.Combine(targetPath, file.Name);
                     File.Copy(file.FullName, targetFilePath, true);
+                    string targetFileText = File.ReadAllText(targetFilePath).Replace(".cshtml", ".html");
+                    File.WriteAllText(targetFilePath, targetFileText);
                 }
             }
 
@@ -95,18 +97,8 @@ namespace webtool
             string html = HttpTool.GetHtml(fileUrl);
             html = html.Replace(".cshtml", ".html");
 
-            //Tidy tidy = new Tidy();
-            //MemoryStream input = new MemoryStream(Encoding.UTF8.GetBytes(html));
-            //MemoryStream output = new MemoryStream();
-            //var messages = new TidyMessageCollection();
-            //tidy.Parse(input, output, messages);
-            //html = Encoding.UTF8.GetString(output.ToArray());
-
             string htmlFilePath = Path.Combine(targetPath, sourceFile.Name.Replace(".cshtml", ".html"));
             File.WriteAllText(htmlFilePath, html, UTF8Encoding.UTF8);
-
-            //input.Dispose();
-            //output.Dispose();
         }
     }
 }

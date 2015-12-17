@@ -6,7 +6,23 @@
             "name": "myhome",
             "projectDirectory": "E:\project\我的家\h5\myhome\myhome",
             "url": "http://localhost:9000",
-            "output": "E:\project\我的家\h5\publish",
+            "output": "E:\project\我的家\publish\myhome",
+            "compress": false,
+            "syncSvn": false,
+            "commitSvn": false,
+            "structure": {
+                "view": "views", // "\","views"
+                "script": "res/js", // optimization
+                "css": "res/css", // optimization
+                "image": "res/img"
+            },
+            "ignoreDirectory": "/views"
+        },
+		{
+            "name": "myhome.mobile",
+            "projectDirectory": "E:\project\我的家\h5\myhome.mobile\myhome.mobile",
+            "url": "http://192.168.3.71:8006",
+            "output": "E:\project\我的家\publish\myhome.mobile",
             "compress": false,
             "syncSvn": false,
             "commitSvn": false,
@@ -22,7 +38,23 @@
             "name": "myhome.h5",
             "projectDirectory": "E:\project\我的家\h5\myhome.h5\myhome.h5",
             "url": "http://localhost:9003",
-            "output": "E:\project\我的家\h5\publish.h5",
+            "output": "E:\project\我的家\publish\myhome.h5",
+            "compress": false,
+            "syncSvn": false,
+            "commitSvn": false,
+            "structure": {
+                "view": "views", // "\","views"
+                "script": "res/js", // optimization
+                "css": "res/css", // optimization
+                "image": "res/img"
+            },
+            "ignoreDirectory": "/views"
+        },
+        {
+            "name": "myhome.erp",
+            "projectDirectory": "E:\project\我的家\h5\myhome.erp\myhome.erp",
+            "url": "http://localhost:9001",
+            "output": "E:\project\我的家\publish\myhome.erp",
             "compress": false,
             "syncSvn": false,
             "commitSvn": false,
