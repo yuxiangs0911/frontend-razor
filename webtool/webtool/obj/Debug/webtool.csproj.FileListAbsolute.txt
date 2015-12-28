@@ -29,8 +29,8 @@ F:\project\frontend-razor\webtool\webtool\bin\Debug\webtool.exe
 F:\project\frontend-razor\webtool\webtool\bin\Debug\webtool.pdb
 F:\project\frontend-razor\webtool\webtool\bin\Debug\Newtonsoft.Json.dll
 F:\project\frontend-razor\webtool\webtool\bin\Debug\Newtonsoft.Json.xml
-F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.csprojResolveAssemblyReference.cache
 F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.RootForm.resources
 F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.Properties.Resources.resources
 F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.csproj.GenerateResource.Cache
 F:\project\frontend-razor\webtool\webtool\bin\Debug\TidyNet.dll
+F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.csprojResolveAssemblyReference.cache

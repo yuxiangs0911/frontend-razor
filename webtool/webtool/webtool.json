@@ -21,7 +21,7 @@
 		{
             "name": "myhome.mobile",
             "projectDirectory": "E:\project\我的家\h5\myhome.mobile\myhome.mobile",
-            "url": "http://192.168.3.71:8006",
+            "url": "http://192.168.1.146:8006",
             "output": "E:\project\我的家\publish\myhome.mobile",
             "compress": false,
             "syncSvn": false,

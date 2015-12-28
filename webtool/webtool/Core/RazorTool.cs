@@ -64,8 +64,12 @@ namespace webtool
                 {
                     string targetFilePath = Path.Combine(targetPath, file.Name);
                     File.Copy(file.FullName, targetFilePath, true);
-                    string targetFileText = File.ReadAllText(targetFilePath).Replace(".cshtml", ".html");
-                    File.WriteAllText(targetFilePath, targetFileText);
+
+                    if (file.Extension == ".js")
+                    {
+                        string targetFileText = File.ReadAllText(targetFilePath).Replace(".cshtml", ".html");
+                        File.WriteAllText(targetFilePath, targetFileText);
+                    }
                 }
             }
 
