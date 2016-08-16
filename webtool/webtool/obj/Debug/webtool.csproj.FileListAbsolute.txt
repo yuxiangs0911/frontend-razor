@@ -34,3 +34,17 @@ F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.Properties.Resources
 F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.csproj.GenerateResource.Cache
 F:\project\frontend-razor\webtool\webtool\bin\Debug\TidyNet.dll
 F:\project\frontend-razor\webtool\webtool\obj\Debug\webtool.csprojResolveAssemblyReference.cache
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\obj\Debug\webtool.RootForm.resources
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\obj\Debug\webtool.Properties.Resources.resources
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\obj\Debug\webtool.csproj.GenerateResource.Cache
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\bin\Debug\webtool.json
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\bin\Debug\Libs\r.js
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\bin\Debug\webtool.exe.config
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\bin\Debug\webtool.exe
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\bin\Debug\webtool.pdb
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\bin\Debug\Newtonsoft.Json.dll
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\bin\Debug\Newtonsoft.Json.xml
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\obj\Debug\webtool.csprojResolveAssemblyReference.cache
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\obj\Debug\webtool.exe
+C:\Users\yuxiang\Source\Repos\frontend-razor\webtool\webtool\obj\Debug\webtool.pdb

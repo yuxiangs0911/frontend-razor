@@ -2,86 +2,22 @@
     "name": "webtool",
     "version": "1.0.0",
     "projects": [
-        {
-            "name": "myhome",
-            "projectDirectory": "E:\project\我的家\h5\myhome\myhome",
-            "url": "http://localhost:9000",
-            "output": "E:\project\我的家\publish\myhome",
-            "compress": false,
-            "syncSvn": false,
-            "commitSvn": false,
-            "structure": {
-                "view": "views", // "\","views"
-                "script": "res/js", // optimization
-                "css": "res/css", // optimization
-                "image": "res/img"
-            },
-            "ignoreDirectory": "/views"
+      {
+        "name": "redpacket",
+        "projectDirectory": "C:\Git\yx-static\RedPacket\RedPacket\RedPacket",
+        "url": "http://localhost:10010",
+        "output": "C:\Users\yuxiang\Documents\publish\RedPacket2",
+        "compress": false,
+        "syncSvn": false,
+        "commitSvn": false,
+        "structure": {
+          "view": "views", // "\","views"
+          "script": "res/js", // optimization
+          "css": "res/css", // optimization
+          "image": "res/img"
         },
-		{
-            "name": "myhome.mobile",
-            "projectDirectory": "E:\project\我的家\h5\myhome.mobile\myhome.mobile",
-            "url": "http://192.168.1.146:8006",
-            "output": "E:\project\我的家\publish\myhome.mobile",
-            "compress": false,
-            "syncSvn": false,
-            "commitSvn": false,
-            "structure": {
-                "view": "views", // "\","views"
-                "script": "res/js", // optimization
-                "css": "res/css", // optimization
-                "image": "res/img"
-            },
-            "ignoreDirectory": "/views"
-        },
-        {
-            "name": "myhome.h5",
-            "projectDirectory": "E:\project\我的家\h5\myhome.h5\myhome.h5",
-            "url": "http://localhost:9003",
-            "output": "E:\project\我的家\publish\myhome.h5",
-            "compress": false,
-            "syncSvn": false,
-            "commitSvn": false,
-            "structure": {
-                "view": "views", // "\","views"
-                "script": "res/js", // optimization
-                "css": "res/css", // optimization
-                "image": "res/img"
-            },
-            "ignoreDirectory": "/views"
-        },
-        {
-            "name": "myhome.erp",
-            "projectDirectory": "E:\project\我的家\h5\myhome.erp\myhome.erp",
-            "url": "http://localhost:9001",
-            "output": "E:\project\我的家\publish\myhome.erp",
-            "compress": false,
-            "syncSvn": false,
-            "commitSvn": false,
-            "structure": {
-                "view": "views", // "\","views"
-                "script": "res/js", // optimization
-                "css": "res/css", // optimization
-                "image": "res/img"
-            },
-            "ignoreDirectory": "/views"
-        },
-        {
-            "name": "erp",
-            "projectDirectory": "E:\project\ges2.0\h5\erp\erp",
-            "url": "http://localhost:8000",
-            "output": "E:\project\ges2.0\h5\publish\html",
-            "compress": false,
-            "syncSvn": false,
-            "commitSvn": false,
-            "structure": {
-                "view": "views", // "\","views"
-                "script": "scripts", // optimization
-                "css": "css,libs/magnific,libs/uploadify", // optimization
-                "image": "images"
-            },
-            "ignoreDirectory": "/views"
-        }
+        "ignoreDirectory": "/views"
+      }
     ]
 }
 
